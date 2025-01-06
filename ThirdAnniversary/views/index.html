@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <title>Pagina Principal</title>
+</head>
+<body id="body-home">
+  <section class="container">
+    <article>
+      <h1>NUESTRO TERCER ANIVERSARIO</h1>
+      <p>Te ví aquel día de agosto 2021, 
+        <br>sin imaginar que te convertirías
+        <br>en la persona más importante
+        <br>de mi vida
+      </p>
+      <img src="../sources/images/button.png" alt="Botón para ingresar a la página" id="start-button">
+    </article>
+  </section>
+</body>
+<script>
+  let startButton = document.getElementById("start-button");
+  startButton.onclick = redirectPage;
+
+  function redirectPage(){
+    window.location.href = './menu.html';
+  }
+</script>
+</html>
